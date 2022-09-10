@@ -15,23 +15,10 @@
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       <div>
         {% for job in jobs %}
-          <div style="margin-bottom:16px">
-            <h4 style="color:rgb(110,110,110) margin-bottom:4px">
-              {{job["title"]}}
-            </h4>
-            <div>
-              <b>Location:</b>{{job["location"]}} 
-            </div>
-            <div>
-              <b>Location:</b>{{job["location"]}} 
-            </div>
-            <div>
-              <b>Location:</b>{{job["location"]}} 
-            </div>  
-          </div>
+         {% include "jobitem.html" %}
         {% endfor %}
       </div>
-      <div class="text-center"><button class="btn btn-primary btn-lg">Submit</button>
+      <div class="text-center"><button class="btn btn-primary btn-lg">Contact me</button>
       <p class="mt-4">Copywrite 2022, Funbi</p></div>
     </div>
   </body>
